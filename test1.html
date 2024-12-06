@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家政網頁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HOME ECONOMICS</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#tiramisu">TIRAMISU</a></li>
+                <li><a href="#brownie">BROWNIE</a></li>
+                <li><a href="#Q&A">Q&A</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2 class="homeh2"> HOLA! </h2>
+        <h2 class="home22"> HERE'S HOME ECONOMICS CLASS</h2>
+        <div class="container">
+            <div class="text">
+                <p>今天要製做的甜點</p>
+                <p>提拉抹蘇</p>
+                <p>布朗尼</p>
+
+            </div>
+            <img src="C:\Users\bonni\Desktop\vscode\多媒體教案\布朗+提拉.jpg" width="200" height="200" >
+        </div>
+        
+        
+    </section>
+
+    <section id="tiramisu">
+        <h2>提拉米蘇 TIRAMISU</h2>
+        <div class="text2">
+            <div style="text-align: center;">
+                <iframe src="recipe_tira.txt" width="853" height="480px" style="border: none;"></iframe>
+            </div>
+            <!-- 圖片作為連結 -->
+                <a href="https://www.youtube.com/watch?v=85DoqM09GJM" target="_blank">
+                <img src="C:\Users\bonni\Desktop\vscode\多媒體教案\提拉.png" alt="點擊觀看提拉米蘇製作影片" style="width:650px; height:auto;">
+                </a>
+
+             <!-- 新增返回頂部按鈕 -->
+                <div style="text-align: center; margin-top: 20px;">
+                <button id="back-to-top" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">返回頂部</button>
+                </div>
+
+        </div>
+    </section>
+
+    <script>
+        // 選取按鈕並綁定點擊事件
+        const backToTopButton = document.getElementById("back-to-top");
+    
+        backToTopButton.addEventListener("click", () => {
+            // 使用 scrollTo 方法平滑滾動到頂部
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth", // 平滑滾動效果
+            });
+        });
+    </script>
+    
+    <section id="brownie">
+        <h2>布朗尼 BROWNIE</h2>
+        <div class="text2">
+            <div style="text-align: center;">
+                <iframe  src="brownie.pdf" width="853" height="480px" style="border: none;"></iframe>
+                
+            </div>
+            <!-- 圖片作為連結 -->
+                <a href="https://youtu.be/KADJby8J6h0" target="_blank">
+                <img src="C:\Users\bonni\Desktop\vscode\多媒體教案\布朗.png" alt="點擊觀看布朗尼製作影片" style="width:650px; height:auto;">
+                </a>
+            <!-- 新增返回頂部按鈕 -->
+                <div style="text-align: center; margin-top: 20px;">
+                <button id="back-to-top1" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">返回頂部</button>
+                </div>
+         </div>
+    </section>
+
+    <script>
+        // 選取按鈕並綁定點擊事件
+        const backToTopButton1 = document.getElementById("back-to-top1");
+    
+        backToTopButton1.addEventListener("click", () => {
+            // 使用 scrollTo 方法平滑滾動到頂部
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth", // 平滑滾動效果
+            });
+        });
+    </script>
+
+
+    <iframe src="Q&A.html" width="100%" height="500px" style="border: none;"></iframe>
+
+
+    
+
+    <footer>
+        <p>&copy; 2024 潘柔玉 何舒葦 許家寧 王方瑩. All rights reserved.</p>
+    </footer>
+</body>
+</html>
